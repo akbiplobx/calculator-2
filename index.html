@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A K Biplob</title>
+  <link rel="shortcut icon" href="https://qph.cf2.quoracdn.net/main-qimg-b3b032a4216bcd68feb646127c8c875a" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Calculator</h1>
+  <div class="card">
+<div class="calc_head">
+  <input type="text" id="result" maxlength="10">
+</div>
+<div class="clac_body">
+  <div>
+    <input type="button" class="btn c" value="C" onclick="clearResult()">
+    <input type="button" class="btn" value="+/-">
+    <input type="button" class="btn" value="%">
+    <input type="button" class="btn btn_style" value="/" onclick="insertNumber('/')">
+  </div>
+  <div>
+    <input type="button" class="btn" value="7" onclick="insertNumber(7)">
+    <input type="button" class="btn" value="8" onclick="insertNumber(8)">
+    <input type="button" class="btn" value="9" onclick="insertNumber(9)">
+    <input type="button" class="btn btn_style" value="x" onclick="insertNumber('*')">
+  </div>
+  <div>
+    <input type="button" class="btn" value="4" onclick="insertNumber(4)">
+    <input type="button" class="btn" value="5" onclick="insertNumber(5)">
+    <input type="button" class="btn" value="6" onclick="insertNumber(6)">
+    <input type="button" class="btn btn_style" value="-" onclick="insertNumber('-')">
+  </div>
+  <div>
+    <input type="button" class="btn" value="1" onclick="insertNumber(1)">
+    <input type="button" class="btn" value="2" onclick="insertNumber(2)">
+    <input type="button" class="btn" value="3" onclick="insertNumber(3)">
+    <input type="button" class="btn btn_style" value="+" onclick="insertNumber('+')">
+  </div>
+  <div>
+    <input type="button" class="btn" value="0" onclick="insertNumber(0)">
+    <input type="button" class="btn" value="." onclick="insertNumber('.')">
+    <input type="button" class="btn" value="DEL" onclick="deleteNumbers()">
+    <input type="button" class="btn ak" value="=" onclick="calculate()">
+  </div>
+</div>
+  </div>
+  <h5>Copyright @ A K Biplob</h5>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
